@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_image"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlueBen"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/userEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="20dp"
+        android:hint="Email adresi"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/userPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="20dp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:onClick="forgetPasswordClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifrenizi mi unuttunuz?"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:layout_marginEnd="20dp"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:onClick="loginClicked"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#FF9800"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Henüz hesabınız yok mu?"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:onClick="goToRegisterPage"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
